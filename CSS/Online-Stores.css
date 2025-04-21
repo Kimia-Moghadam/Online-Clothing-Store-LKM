@@ -1,0 +1,75 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is setting attributes for wrapper part.*/
+.wrapper {
+  overflow: hidden;
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .online-stores-part {
+  max-height: 100%;
+  min-height: 57vh;
+  margin-top: 140px;
+}
+.wrapper .online-stores-part .title-part {
+  font-family: "Merriweather-Bold";
+  line-height: 1.7;
+}
+.wrapper .online-stores-part .details-part .details {
+  font-family: "Merriweather-Regular";
+  font-size: 18px;
+  line-height: 1.7;
+}
+.wrapper .online-stores-part .details-part .details a {
+  color: #000000;
+  border-bottom: 1px solid #C5705D;
+  line-height: 1.7;
+}
+.wrapper .online-stores-part .details-part .titles {
+  font-family: "Merriweather-Bold";
+  line-height: 1.7;
+}
+
+/*This scetion is for setting attributes for responsiving 1200px or less.*/
+@media screen and (max-width: 1200px) {
+  .wrapper .online-stores-part {
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+}
+
+/*This section is for setting opacities animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Online-Stores.css.map */

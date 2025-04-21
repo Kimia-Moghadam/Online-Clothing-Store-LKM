@@ -1,0 +1,13 @@
+In The Sign Up Page, We Have Title Page, Icon Page(Favicon), Header Style(Special Header), Sign Up Style, Footer Style & Bootstrap CSS CDN In
+The Head Tag. In The Body Tag, We Have Wrapper Part. In The Wrapper Part, We Have Header Part, Sign Up Part, Footer Part & Bootstrap JS CDN.
+
+In The Header Part, We Have Navbar Part. In Navbar Part, We Have Logo, Hamburger Menu Part, Unordered List,
+List Items, Shopping Bag & Search Part(Form) & Account Part. Logo Image's Width Is 70% & Its Height Is auto.
+
+In The Sign Up Part, We Have A Form With Width Of 25rem & Border Radius Of 16 Pixel. Sign Up Title & Sign Up Form. In The Sign Up Form, We Have
+Inputs, A Dropdown, Agreement Checkbox, Sign Up Button & Login Link. Sign Up Button's Background Color Is $fourth-color & Its
+Border Radius Is 0.375rem. For Its Hover, The Button Has Transition For Opacity For 0.2s. Its Hover Has Opacity 0.5.
+
+In The Footer Part, We Have Logo & Social Media Part, Help & Information Part, About Us Part, Communication Part & Copyright Part. Footer Part's
+Width Is 100% & Its Height Is auto. Its Background Color Is $fourth-color. Copyright Part's Background Color Is $first-color & Its Color Is
+$fifth-color. The Copyright Logo Image's Width Is 30 Pixel & Its Height Is auto.

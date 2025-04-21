@@ -1,0 +1,82 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper {
+  width: 100%;
+  background-color: #F8EDE3;
+  overflow: hidden;
+}
+.wrapper .header-part .navbar-part {
+  width: 70%;
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .header-part .navbar-part .logo-part {
+  width: 70px;
+  height: auto;
+}
+.wrapper .header-part .navbar-part .hamburger-icon {
+  background: none;
+  border: none;
+}
+.wrapper .header-part .navbar-part .ul-part .li-part .a-part {
+  color: #000000;
+  font-family: "Merriweather-Regular";
+  transition: all 0.2s;
+}
+.wrapper .header-part .navbar-part .ul-part .li-part .a-part:hover {
+  font-size: 18px;
+}
+.wrapper .header-part .navbar-part .search-part .shopping-bag-button {
+  background: none;
+  border: none;
+}
+.wrapper .header-part .navbar-part .search-part .search-button {
+  background: none;
+  border: none;
+}
+.wrapper .header-part .navbar-part .search-part .search-box {
+  outline: none;
+}
+.wrapper .header-part .navbar-part .search-part .search-box::-moz-placeholder {
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .header-part .navbar-part .search-part .search-box::placeholder {
+  font-family: "Merriweather-LightItalic";
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Header.css.map */

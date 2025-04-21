@@ -1,0 +1,56 @@
+We Use Five Colors For The Website:
+#F8EDE3 = $first-color, 
+#DFD3C3 = $second-color,
+#D0B8A8 = $third-color,
+#C5705D = $fourth-color,
+#000000 = $fifth-color
+
+*************************
+Index Colors:
+
+Index Layout Background Color : #F8EDE3
+
+Header Menus Text Color : #D0B8A8 or #000000
+Header Search Icon Color : #D0B8A8 or #000000
+Header Search Text Box Background Color : #DFD3C3 or White
+Account Icon Color : #D0B8A8 or #000000
+
+Carousel Slider Part Background Color : #F8EDE3
+
+Categories Part Text Color : #000000
+
+Best Selling Products Part Background Color : #C5705D
+Best Selling Products Part More Icon Color : #F8EDE3
+Best Selling Products Part Cards Background Color : #DFD3C3
+Best Selling Products Part Cards Text Color : #000000
+
+Show Products Part Background Color : #F8EDE3
+Show Products Part More Icon Color : #C5705D
+Show Products Part Cards Background Color : #DFD3C3
+Show Products Part Text Color : #000000
+
+Footer Background Color : #C5705D
+Footer Text Color : #DFD3C3
+Right Part Background Color : #F8EDE3
+Right Part Text Color : #D0B8A8 or #000000
+
+*************************
+Categories Pages Colors:
+
+Header & Footer Colors Are Like Index Colors.
+
+Categories Pages Background Color : #D0B8A8
+Cards Background Color : #DFD3C3
+Cards Text Color : #000000
+Page Number Color : #C5705D
+
+*************************
+Login Page Colors:
+
+Header & Footer Colors Are Like Index Colors.
+
+Login Page Background Color: #F8EDE3
+Login Card Background Color: #DFD3C3
+Login Card Text Color: #000000
+Login Submit Button Background Color: #C5705D
+Login Submit Button Text Color: #F8EDE3

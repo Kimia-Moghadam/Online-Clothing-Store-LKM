@@ -1,0 +1,46 @@
+In The Index Page, We Have Title Page, Icon Page(Favicon), Index Style, Footer Style & Bootstrap CSS CDN In The Head Tag.
+In The Body Tag, We Have Wrapper Part. In The Wrapper Part, We Have Header Part, Slider/Carousel Part, Category Part, Best Selling Products,
+Separator Line, Categories Title Part, Women Products, Men Products, Accessories Products, Footer Part & Bootstrap JS CDN.
+
+In The Header Part, We Have Navbar Part & Header Image Part. In Navbar Part, We Have Logo, Hamburger Menu Part, Unordered List,
+List Items & Shopping Bag & Search Part(Form). Logo Image's Width Is 70% & Its Height Is auto. In The Header Image Part, We Have Header's
+Background Image With Size 1901(100% Width) * 615.2.(After Setting Image For This Part, Please Remove The CSS Part & Uncomment The Background
+Image, Repeat & Size Attributes.)
+
+In The Slider/Carousel Part, We have The Carousel Items Wich Have Images. Background Color Of The Items Are $second-color & Heights of Them Are
+30rem. Their Widths Are 100% & Border Radius Of Them Is 2rem.(Please Uncomment Images & Replace The Image Path And Image Alt.)
+
+In The Category Part, We Have Our Categories & Categories Images. Each Image Size Is 4rem * 4rem & Background Color of Them Is $second-color &
+Border Radius' Of Them Are 100%. Images Hover's Size Is 4.4rem * 4.4rem.(Please Uncomment Images & Replace The Image Path And Image Alt.)
+
+In The Best Selling Products Part, We Have Our Best Selling Products & More Icon. Best Selling Products Part's Width Is 100% & Its Height Is
+auto. Our Products Cards Have Images, Titles, Prices & Add-To-Shopping-Bag Button. Width Of These Cards Are 14.5rem & Heights of Them Are 23rem
+& Its Border Radius' Are 0.5rem. The Cards' Image Size Is 10rem * 10rem & Their Background Colors Are $third-color. Background Color Of The
+Add-To-Shopping-Bag Is $fourth-color & Border Radius Of The Button is 0.375rem. For Its Hover, The Button Has Transition For Opacity For 0.2s.
+Its Hover Has Opacity 0.5. (Please Delete The Texts. Also Replace Image Path & Image Alt. And Replace Titles & Prices.)
+
+We Have Separator Line Here.
+
+We Have Categories Title Part Here.
+
+In The Women Products Part, We Have Our Women Products & More Icon. The Women Products Part's Width Is 100% & Its Height Is
+auto. Our Products Cards Have Images, Titles, Prices & Add-To-Shopping-Bag Button. Width Of These Cards Are 14.5rem & Heights of Them Are 23rem
+& Its Border Radius' Are 0.5rem. The Cards' Image Size Is 10rem * 10rem & Their Background Colors Are $third-color. Background Color Of The
+Add-To-Shopping-Bag Is $second-color & Border Radius Of The Button is 0.375rem. For Its Hover, The Button Has Transition For Opacity For 0.2s.
+Its Hover Has Opacity 0.5. (Please Delete The Texts. Also Replace Image Path & Image Alt. And Replace Titles & Prices.)
+
+In The Men Products Part, We Have Our Men Products & More Icon. The Men Products Part's Width Is 100% & Its Height Is
+auto. Our Products Cards Have Images, Titles, Prices & Add-To-Shopping-Bag Button. Width Of These Cards Are 14.5rem & Heights of Them Are 23rem
+& Its Border Radius' Are 0.5rem. The Cards' Image Size Is 10rem * 10rem & Their Background Colors Are $third-color. Background Color Of The
+Add-To-Shopping-Bag Is $second-color & Border Radius Of The Button is 0.375rem. For Its Hover, The Button Has Transition For Opacity For 0.2s.
+Its Hover Has Opacity 0.5. (Please Delete The Texts. Also Replace Image Path & Image Alt. And Replace Titles & Prices.)
+
+In The Accessories Products Part, We Have Our Accessories Products & More Icon. The Accessories Products Part's Width Is 100% & Its Height Is
+auto. Our Products Cards Have Images, Titles, Prices & Add-To-Shopping-Bag Button. Width Of These Cards Are 14.5rem & Heights of Them Are 23rem
+& Its Border Radius' Are 0.5rem. The Cards' Image Size Is 10rem * 10rem & Their Background Colors Are $third-color. Background Color Of The
+Add-To-Shopping-Bag Is $second-color & Border Radius Of The Button is 0.375rem. For Its Hover, The Button Has Transition For Opacity For 0.2s.
+Its Hover Has Opacity 0.5. (Please Delete The Texts. Also Replace Image Path & Image Alt. And Replace Titles & Prices.)
+
+In The Footer Part, We Have Logo & Social Media Part, Help & Information Part, About Us Part, Communication Part & Copyright Part. Footer Part's
+Width Is 100% & Its Height Is auto. Its Background Color Is $fourth-color. Copyright Part's Background Color Is $first-color & Its Color Is
+$fifth-color. The Copyright Logo Image's Width Is 30 Pixel & Its Height Is auto.

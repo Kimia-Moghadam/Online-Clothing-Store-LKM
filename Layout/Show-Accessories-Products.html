@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>LKM - Accessories Products</title>
+    <!-- page icon -->
+    <link rel="icon" href="../Assets/Images/2c5705d.png">
+    <!-- header style -->
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <!-- show accessories products page style -->
+    <link rel="stylesheet" href="../CSS/Show-Accessories-Products-Style.css">
+    <!-- footer style -->
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- wrapper part -->
+    <div class="wrapper">
+        <!-- header part -->
+        <section class="header-part">
+            <!-- navbar part -->
+            <nav class="navbar navbar-expand-xl navbar-part mx-auto align-items-center z-1">
+                <div class="container-fluid mt-3">
+                    <!-- logo part -->
+                    <img src="../Assets/Images/2c5705d.png" alt="LOGO" class="navbar-brand me-xl-5 me-0 logo-part">
+                    <!-- hamburger menu -->
+                    <button class="hamburger-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="../Assets/Svgs/icons8-menu-50.png" alt="Hamburger Menu Icon" class="d-xl-none d-block">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- unordered list part & list items part -->
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0 ul-part">
+                            <li class="nav-item active text-center mt-xl-0 mt-4 mx-xl-2 mx-0 home-li-part li-part">
+                                <a class="nav-link home-a-part a-part" aria-current="page" href="../Layout/Index.html">Home</a>
+                            </li>
+                            <li class="nav-item text-center mt-xl-0 mt-3 mx-xl-2 mx-0 contact-us-li-part li-part">
+                                <a class="nav-link contact-us-a-part a-part" href="#contact-us">Contact Us</a>
+                            </li>
+                            <li class="nav-item text-center mt-xl-0 mt-3 mx-xl-2 mx-0 about-us-li-part li-part">
+                                <a class="nav-link about-us-a-part a-part" href="#about-us">About Us</a>
+                            </li>
+                        </ul>
+                        <!-- search part -->
+                        <form class="d-flex flex-column flex-xl-row justify-content-center align-items-center search-part" role="search">
+                            <a href="../Layout/Shopping-Bag.html" class="text-decoration-none me-xl-5 mb-xl-0 mb-3 mt-xl-0 mt-4 shopping-bag-button">
+                                <img src="../Assets/Svgs/icons8-shopping-cart-35.png" alt="Shopping Bag">
+                            </a>
+                            <button class="mb-xl-0 mb-2 mt-xl-0 mt-4 me-xl-2 search-button" type="submit">
+                                <img src="../Assets/Svgs/icons8-search-35.png" alt="Search">
+                            </button>
+                            <input class="form-control me-xl-5 mb-xl-0 mb-3 search-box" type="search" placeholder="Search" aria-label="Search">
+                            <a href="../Layout/Login.html" class="user-account ms-xl-4 mt-xl-0 mt-4">
+                                <img src="../Assets/Svgs/icons8-account-35.png" alt="Account">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- show accessories products part -->
+        <section class="show-accessories-products-part">
+            <div class="show-accessories-products-title-part my-5 d-flex justify-content-center align-items-center gap-2">
+                <h4 class="show-accessories-products-title">Accessories Products</h4>
+                <img src="../Assets/Svgs/icons8-ring-side-view-64.png" alt="Accessories Products" class="show-accessories-products-image">
+            </div>
+            <div class="show-accessories-products px-4 d-flex justify-content-center align-items-center flex-wrap mb-5 gap-5"id="Show-accessories-Products">
+                <div class="product-one products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory1.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's necklace, jewelry with black heart</div>
+                    <div class="products-price mb-4">$23.7</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-two products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory2.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Bandage with heartbeat signs</div>
+                    <div class="products-price mb-4">$80.5</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-three products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory3.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's chest flower, doctor model </div>
+                    <div class="products-price mb-4">$14.32</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-four products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory4.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Men's silver ring with agate model</div>
+                    <div class="products-price mb-4">$43.6</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-five products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory5.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's and men's single gem silver ring set</div>
+                    <div class="products-price mb-4">$29</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-six products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory6.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's GTA silver necklace pendant</div>
+                    <div class="products-price mb-4">$17</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-seven products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory7.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">GTA women's silver bracelet, heart model</div>
+                    <div class="products-price mb-4">$24.63</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-eight products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory8.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">omen's half set bat model code N.KHF.B.11 </div>
+                    <div class="products-price mb-4">$63.8</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-nine products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory9.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's earrings, model SMG07</div>
+                    <div class="products-price mb-4">$21.2</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-ten products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory10.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">women's necklace pendant, moon model </div>
+                    <div class="products-price mb-4">$18.69</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-eleven products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory11.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Full moon design resin necklace pendant</div>
+                    <div class="products-price mb-4">$23</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-twelve products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory12.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Female ear piercing </div>
+                    <div class="products-price mb-4">$72.1</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-thirteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory13.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's ring, accessorized </div>
+                    <div class="products-price mb-4">$11.2</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-fourteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory14.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Seven chakra amethyst model necklace pendant </div>
+                    <div class="products-price mb-4">$49.3</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-fifteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory15.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's earring snail model</div>
+                    <div class="products-price mb-4">$40</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-sixteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory16.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's necklace pendant, agate model</div>
+                    <div class="products-price mb-4">$24.36</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-seventeen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory17.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's watch pendant YSX rabbit mod</div>
+                    <div class="products-price mb-4">$28.4</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-eighteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory18.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Juping women's necklace pendant </div>
+                    <div class="products-price mb-4">$54.3</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-nineteen products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory19.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Zhuping women's bracelet </div>
+                    <div class="products-price mb-4">$28</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-twenty products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory20.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Women's watch pendant with angel and moon</div>
+                    <div class="products-price mb-4">$35.6</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+                <div class="product-twenty-one products rounded-3 d-flex flex-column justify-content-start align-items-center">
+                    <img class="products-image" id="products-image" src="../Assets/Images/products/accessory21.PNG" alt="Product">
+                    <div class="products-title mb-4 pb-3">Capital women's ear piercing</div>
+                    <div class="products-price mb-4">$11.6</div>
+                    <button class="add-to-shopping-bag btn px-3 py-2 "onclick="getHTMLProductData(this)">Add To Shopping Bag</button>
+                </div>
+            </div>
+            <a class="btn cart" href="../Layout/Shopping-Bag.html">Go To shopping Bag</a>
+        </section>
+        <!-- footer part -->
+        <section class="footer-part mt-4 d-flex justify-content-around align-items-start flex-wrap">
+            <!-- logo & social media part -->
+            <div class="logo-and-social-media-part d-flex flex-column justify-content-center align-items-center my-5 mx-4">
+                <img src="../Assets/Images/2f8ede31.png" alt="LOGO" class="logo-footer">
+                <div class="social-media-icons mt-2">
+                    <a href="#"><img src="../Assets/Svgs/icons8-email-50.png" alt="Email" class="rounded-3 me-1"></a>
+                    <a href="#"><img src="../Assets/Svgs/icons8-linkedin-50.png" alt="LinkedIn" class="rounded-3 mx-2"></a>
+                    <a href="#"><img src="../Assets/Svgs/icons8-instagram-50.png" alt="Instagram" class="rounded-3"></a>
+                </div>
+            </div>
+            <!-- help & information part -->
+            <div class="help-and-information-part d-flex flex-column justify-content-center align-items-start my-5 mx-4" id="contact-us">
+                <h5 class="lh-lg">Help & Information</h5>
+                <a href="../Layout/Help-And-Contact-Us.html" class="text-decoration-none help-and-information-items lh-lg">Help & Contact Us</a>
+                <a href="../Layout/Returns-And-Refunds.html" class="text-decoration-none help-and-information-items lh-lg">Returns & Refunds</a>
+                <a href="../Layout/Online-Stores.html" class="text-decoration-none help-and-information-items lh-lg">Online Stores</a>
+                <a href="../Layout/Terms-And-Conditions.html" class="text-decoration-none help-and-information-items lh-lg">Terms & Conditions</a>
+            </div>
+            <!-- about us part -->
+            <div class="about-us-part d-flex flex-column justify-content-center align-items-start my-5 mx-4" id="about-us">
+                <h5 class="lh-lg">About Us</h5>
+                <a href="../Layout/About-Us.html" class="text-decoration-none about-us-items lh-lg">About Us</a>
+                <a href="../Layout/What-We-Can-Do.html" class="text-decoration-none about-us-items lh-lg">What We Do</a>
+                <a href="../Layout/Contact-Us.html" class="text-decoration-none about-us-items lh-lg">Contact Us</a>
+            </div>
+            <!-- communication part -->
+            <div class="communication-part d-flex flex-column justify-content-center align-items-start my-5 text-center mx-4">
+                <h5 class="lh-lg text-center">Let's Keep In Touch!</h5>
+                <div class="input-and-send-icon mt-3">
+                    <input type="text" placeholder="Your Email" class="rounded-5 py-3 ps-3 pe-3">
+                    <img src="../Assets/Svgs/icons8-email-send-30.png" alt="Send" class="btn" onclick="redirectToLogin()">
+                </div>
+            </div>
+            <!-- copyright part -->
+            <div class="copyright-part w-100 py-4 d-flex justify-content-center align-items-center gap-1">
+                <img src="../Assets/Svgs/icons8-copyright-48.png" alt="Copyright">
+                <span>All Rights Reserved.</span>
+            </div> 
+        </section>
+    </div>
+    <!-- bootstrap js cdn -->
+     <script src="../JS/Show-accessories-Products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

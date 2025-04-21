@@ -1,0 +1,721 @@
+/*This section is for setting fonts.*/
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Bold";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*This section is about color variables.*/
+$first-color: #F8EDE3;
+$second-color: #DFD3C3;
+$third-color: #D0B8A8;
+$fourth-color: #C5705D;
+$fifth-color: #000000;
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper{
+    width: 100%;
+    background-color: $first-color;
+    overflow: hidden;
+    /*This section is for setting attributes for header part.*/
+    .header-part{
+        .navbar-part{
+            width: 70%;
+            animation-name: opacities;
+            animation-duration: 1s;
+            .logo-part{
+                width: 70px;
+                height: auto;
+            }
+            .hamburger-icon{
+                background: none;
+                border: none;
+            }
+            .ul-part{
+                .li-part{
+                    .home-a-part{
+                        border-bottom: 1px solid $fifth-color;
+                    }
+                    .a-part{
+                        color: $fifth-color;
+                        font-family: "Merriweather-Regular";
+                        transition: all 0.2s;
+                    }
+                    .a-part:hover{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .shopping-bag-and-search-part{
+                .shopping-bag-button{
+                    background: none;
+                    border: none;
+                    transition: all 0.2s;
+                }
+                .search-button{
+                    background: none;
+                    border: none;
+                }
+                .search-box{
+                    outline: none;
+                }
+                .search-box::placeholder{
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+        }
+        /*This section is for setting attributes for header image, title and description part. After setting image, please change this part.*/
+        .header-image-and-title{
+            .header-image{
+                /*after replacing image tag in html document, delete height and uncomment backgound image, repeat and size.*/
+                height: 30rem;
+                // background-image: url();
+                // background-repeat: no-repeat;
+                // background-size: cover;
+            }
+        }
+    }
+    /*This section is for setting attributes for carousel part.*/
+    .carousel-part{
+        animation-name: opacities;
+        animation-duration: 1s;
+        .carousel-item-part{
+            background-color: $second-color;
+            height: 30rem;
+        }
+    }
+    /*This section is for setting attributes for category part.*/
+    .category-part{
+        animation-name: opacities;
+        animation-duration: 1s;
+        .categories{
+            width: 4rem;
+            height: 4rem;
+            background-color: $second-color;
+            border-radius: 100%;
+            transition: all 0.2s;
+        }
+        .categories:hover{
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+        .category-title{
+            color: $fifth-color;
+            font-family: "Merriweather-Regular";
+        }
+    }
+    /*This section is for setting attributes for best selling products part.*/
+    .best-selling-products-part{
+        background-color: $fourth-color;
+        width: 100%;
+        height: auto;
+        animation-name: opacities;
+        animation-duration: 1s;
+        .best-selling-products-title-part{
+            font-family: "Merriweather-Bold";
+            color: $fifth-color;
+            font-size: 18px;
+            margin-top: -1rem;
+            position: relative;
+        }
+        .best-selling-products-title-part::after{
+            content: "";
+            display: inline-block;
+            width: 88%;
+            height: 2px;
+            background-color: $first-color;
+            position: absolute;
+            top: 27%;
+            margin-left: 12px;
+            animation-name: best-selling-products-title-part-after-desktop-size;
+            animation-duration: 4s;
+        }
+        .best-selling-products-cards-part{
+            .products{
+                background-color: $second-color;
+                width: 14.5rem;
+                height: 23rem;
+                transition: transform 0.2s;
+                .products-image{
+                    width: 10rem;
+                    height: 10rem;
+                    background-color: $third-color;
+                }
+                .products-title{
+                    font-family: "Merriweather-Regular";
+                }
+                .products-price{
+                    font-family: "Merriweather-Regular";
+                }
+                .add-to-shopping-bag{
+                    background-color: $fourth-color;
+                    font-family: "Merriweather-Regular";
+                    transition: opacity 0.2s;
+                }
+                .add-to-shopping-bag:hover{
+                    opacity: 0.5;
+                }
+            }
+            .products:hover{
+                transform: scale(1.03);
+            }
+        }
+        .more-shape{
+            a{
+                transition: opacity 0.2s;
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+                span{
+                    color: $first-color;
+                    font-size: 14px;
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+            a:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    /*This section is for setting attributes for separator line before part.*/
+    .separator-line::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $fifth-color;
+        animation-name: opacities , separator-line-animation;
+        animation-duration: 1s , 3s;
+    }
+    /*This section is for setting attributes for categories title part.*/
+    .categories-title-part{
+        .title-part{
+            font-family: "Merriweather-Bold";
+            animation-name: opacities;
+            animation-duration: 1s;
+        }
+    }
+    /*This section is for setting attributes for show women products part.*/
+    .show-women-products-part{
+        background-color: $first-color;
+        width: 100%;
+        height: auto;
+        animation-name: opacities;
+        animation-duration: 1s;
+        .show-women-products-title-part{
+            font-family: "Merriweather-Bold";
+            color: $fifth-color;
+            font-size: 18px;
+            margin-top: -1rem;
+            position: relative;
+        }
+        .show-women-products-cards-part{
+            .products{
+                background-color: $fourth-color;
+                width: 14.5rem;
+                height: 23rem;
+                transition: transform 0.2s;
+                .products-image{
+                    width: 10rem;
+                    height: 10rem;
+                    background-color: $second-color;
+                }
+                .products-title{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .products-price{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .add-to-shopping-bag{
+                    background-color: $second-color;
+                    font-family: "Merriweather-Regular";
+                    transition: opacity 0.2s;
+                }
+                .add-to-shopping-bag:hover{
+                    opacity: 0.5;
+                }
+            }
+            .products:hover{
+                transform: scale(1.03);
+            }
+        }
+        .more-shape{
+            a{
+                transition: opacity 0.2s;
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+                span{
+                    color: $fourth-color;
+                    font-size: 14px;
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+            a:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    /*This section is for setting attributes for show men products part.*/
+    .show-men-products-part{
+        background-color: $first-color;
+        width: 100%;
+        height: auto;
+        animation-name: opacities;
+        animation-duration: 1s;
+        margin-top: -22px;
+        .show-men-products-title-part{
+            font-family: "Merriweather-Bold";
+            color: $fifth-color;
+            font-size: 18px;
+            margin-top: -1rem;
+            position: relative;
+        }
+        .show-men-products-cards-part{
+            .products{
+                background-color: $fourth-color;
+                width: 14.5rem;
+                height: 23rem;
+                transition: transform 0.2s;
+                .products-image{
+                    width: 10rem;
+                    height: 10rem;
+                    background-color: $second-color;
+                }
+                .products-title{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .products-price{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .add-to-shopping-bag{
+                    background-color: $second-color;
+                    font-family: "Merriweather-Regular";
+                    transition: opacity 0.2s;
+                }
+                .add-to-shopping-bag:hover{
+                    opacity: 0.5;
+                }
+            }
+            .products:hover{
+                transform: scale(1.03);
+            }
+        }
+        .more-shape{
+            a{
+                transition: opacity 0.2s;
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+                span{
+                    color: $fourth-color;
+                    font-size: 14px;
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+            a:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    /*This section is for setting attributes for show accessories products part.*/
+    .show-accessories-products-part{
+        background-color: $first-color;
+        width: 100%;
+        height: auto;
+        animation-name: opacities;
+        animation-duration: 1s;
+        margin-top: -22px;
+        .show-accessories-products-title-part{
+            font-family: "Merriweather-Bold";
+            color: $fifth-color;
+            font-size: 18px;
+            margin-top: -1rem;
+            position: relative;
+        }
+        .show-accessories-products-cards-part{
+            .products{
+                background-color: $fourth-color;
+                width: 14.5rem;
+                height: 23rem;
+                transition: transform 0.2s;
+                .products-image{
+                    width: 10rem;
+                    height: 10rem;
+                    background-color: $second-color;
+                }
+                .products-title{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .products-price{
+                    font-family: "Merriweather-Regular";
+                    color: $first-color;
+                }
+                .add-to-shopping-bag{
+                    background-color: $second-color;
+                    font-family: "Merriweather-Regular";
+                    transition: opacity 0.2s;
+                }
+                .add-to-shopping-bag:hover{
+                    opacity: 0.5;
+                }
+            }
+            .products:hover{
+                transform: scale(1.03);
+            }
+        }
+        .more-shape{
+            a{
+                transition: opacity 0.2s;
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+                span{
+                    color: $fourth-color;
+                    font-size: 14px;
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+            a:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 1700px or less.*/
+@media screen and (max-width: 1700px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 84%;
+                animation-name: best-selling-products-title-part-after-1700px;
+            }
+            .best-selling-products-cards-part{
+                .products{
+                    .add-to-shopping-bag{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .show-women-products-part{
+            .show-women-products-cards-part{
+                .products{
+                    .add-to-shopping-bag{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .show-men-products-part{
+            .show-men-products-cards-part{
+                .products{
+                    .add-to-shopping-bag{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .show-accessories-products-part{
+            .show-accessories-products-cards-part{
+                .products{
+                    .add-to-shopping-bag{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 1430px or less.*/
+@media screen and (max-width: 1430px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 81%;
+                animation-name: best-selling-products-title-part-after-1430px;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 1200px or less.*/
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 78%;
+                animation-name: best-selling-products-title-part-after-1200px;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 1030px or less.*/
+@media screen and (max-width: 1030px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 75%;
+                animation-name: best-selling-products-title-part-after-1030px;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 900px or less.*/
+@media screen and (max-width: 900px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 71%;
+                animation-name: best-selling-products-title-part-after-900px;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 780px or less.*/
+@media screen and (max-width: 780px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 66%;
+                animation-name: best-selling-products-title-part-after-780px;
+                animation-duration: 3s;
+            }
+        }
+        .separator-line::before{
+            animation-duration: 1s , 2s;
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 670px or less.*/
+@media screen and (max-width: 670px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 61%;
+                animation-name: best-selling-products-title-part-after-670px;
+                animation-duration: 3s;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 588px or less.*/
+@media screen and (max-width: 588px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part{
+                font-size: 16px;
+            }
+            .best-selling-products-title-part::after{
+                width: 58%;
+                animation-name: best-selling-products-title-part-after-588px;
+                animation-duration: 3s;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 500px or less.*/
+@media screen and (max-width: 500px) {
+    .wrapper{
+        .header-part{
+            .header-image-and-title{
+                .header-image{
+                    height: 25rem;
+                }
+            }
+        }
+        .carousel-part{
+            .carousel-item-part{
+                height: 20rem;
+            }
+        }
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 51%;
+                animation-name: best-selling-products-title-part-after-500px;
+                animation-duration: 3s;
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 428px or less.*/
+@media screen and (max-width: 428px) {
+    .wrapper{
+        .best-selling-products-part{
+            .best-selling-products-title-part::after{
+                width: 41%;
+                animation-name: best-selling-products-title-part-after-428px;
+                animation-duration: 2s;
+            }
+        }
+    }
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*This section is about best selling products title after desktop size or less animation.*/
+@keyframes best-selling-products-title-part-after-desktop-size{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 88%;
+    }
+}
+
+/*This section is about best selling products title after 1700px or less animation.*/
+@keyframes best-selling-products-title-part-after-1700px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 84%;
+    }
+}
+
+/*This section is about best selling products title after 1430px or less animation.*/
+@keyframes best-selling-products-title-part-after-1430px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 81%;
+    }
+}
+
+/*This section is about best selling products title after 1200px or less animation.*/
+@keyframes best-selling-products-title-part-after-1200px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+
+/*This section is about best selling products title after 1030px or less animation.*/
+@keyframes best-selling-products-title-part-after-1030px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/*This section is about best selling products title after 900px or less animation.*/
+@keyframes best-selling-products-title-part-after-900px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 71%;
+    }
+}
+
+/*This section is about best selling products title after 780px or less animation.*/
+@keyframes best-selling-products-title-part-after-780px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 66%;
+    }
+}
+
+/*This section is about best selling products title after 670px or less animation.*/
+@keyframes best-selling-products-title-part-after-670px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 61%;
+    }
+}
+
+/*This section is about best selling products title after 588px or less animation.*/
+@keyframes best-selling-products-title-part-after-588px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 58%;
+    }
+}
+
+/*This section is about best selling products title after 500px or less animation.*/
+@keyframes best-selling-products-title-part-after-500px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 51%;
+    }
+}
+
+/*This section is about best selling products title after 428px or less animation.*/
+@keyframes best-selling-products-title-part-after-428px{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 41%;
+    }
+}
+
+/*This section is about separator line animation.*/
+@keyframes separator-line-animation{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

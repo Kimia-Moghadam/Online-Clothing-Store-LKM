@@ -1,0 +1,95 @@
+/*This section is for setting fonts.*/
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Bold";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*This section is about color variables.*/
+$first-color: #F8EDE3;
+$second-color: #DFD3C3;
+$third-color: #D0B8A8;
+$fourth-color: #C5705D;
+$fifth-color: #000000;
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper{
+    width: 100%;
+    background-color: $first-color;
+    overflow: hidden;
+    /*This section is for setting attributes for header part.*/
+    .header-part{
+        .navbar-part{
+            width: 70%;
+            animation-name: opacities;
+            animation-duration: 1s;
+            .logo-part{
+                width: 70px;
+                height: auto;
+            }
+            .hamburger-icon{
+                background: none;
+                border: none;
+            }
+            .ul-part{
+                .li-part{
+                    .a-part{
+                        color: $fifth-color;
+                        font-family: "Merriweather-Regular";
+                        transition: all 0.2s;
+                    }
+                    .a-part:hover{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .search-part{
+                .shopping-bag-button{
+                    background: none;
+                    border: none;
+                }
+                .search-button{
+                    background: none;
+                    border: none;
+                }
+                .search-box{
+                    outline: none;
+                }
+                .search-box::placeholder{
+                    font-family: "Merriweather-LightItalic";
+                }
+            }
+        }
+    }
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

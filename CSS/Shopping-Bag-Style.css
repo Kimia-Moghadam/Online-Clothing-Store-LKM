@@ -1,0 +1,109 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper {
+  overflow: hidden;
+}
+.wrapper .shopping-bag-part {
+  max-height: 100%;
+  min-height: 60vh;
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .shopping-bag-part .shopping-bag-title-part .shopping-bag-title {
+  font-family: "Merriweather-Bold";
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products {
+  background-color: #C5705D;
+  width: 14.5rem;
+  height: 23rem;
+  transition: transform 0.2s;
+  margin-left: 10px;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .products-image {
+  width: 10rem;
+  height: 10rem;
+  background-color: #DFD3C3;
+  margin-top: 0.5rem;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .products-title {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .products-quantity {
+  margin-top: 1rem;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .products-price {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .cartSummary .total-summary {
+  background-color: #c5705d; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5); 
+}
+.wrapper .shopping-bag-part .shopping-bag-products .cartSummary  .total-cost, .shipping-cost, .grand-total {
+  font-size: 1rem; 
+  margin-bottom: 10px; 
+  font-family: "Merriweather-Bold";
+  color: #F8EDE3;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .cartSummary .btn {
+  background-color: #f8ede3;
+  font-family: "Merriweather-Bold";
+  color: #121212;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .remove-from-shopping-bag {
+  font-size: 14px;
+  background-color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products .remove-from-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .shopping-bag-part .shopping-bag-products .products:hover {
+  transform: scale(1.03);
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Shopping-Bag-Style.css.map */

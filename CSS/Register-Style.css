@@ -1,0 +1,137 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(/Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(/Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(/Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(/Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper .sign-up-part {
+  width: 25rem;
+  background: rgba(223, 211, 195, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(223, 211, 195, 0.3);
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .sign-up-part h4 {
+  font-family: "Merriweather-Bold";
+  transition: font-size 0.2s;
+}
+.wrapper .sign-up-part h4:hover {
+  font-size: 26px;
+}
+.wrapper .sign-up-part .sign-up-form .inputs-part {
+  outline: none;
+  border: none;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .sign-up-part .sign-up-form .dropdown-part .dropdown-button {
+  outline: none;
+  border: 1px solid #000000;
+  font-family: "Merriweather-LightItalic";
+  background: none;
+  color: #000000;
+}
+.wrapper .sign-up-part .sign-up-form .dropdown-part .dropdown-menu-part {
+  background-color: #DFD3C3;
+  border: 1px solid #000000;
+}
+.wrapper .sign-up-part .sign-up-form .dropdown-part .dropdown-menu-part .dropdown-items-part {
+  color: #000000;
+}
+.wrapper .sign-up-part .sign-up-form .agreement-part .checkbox-part input {
+  border: 1px solid #C5705D;
+}
+.wrapper .sign-up-part .sign-up-form .agreement-part .checkbox-part input:checked {
+  background-color: #C5705D;
+}
+.wrapper .sign-up-part .sign-up-form .agreement-part .checkbox-part label {
+  font-family: "Merriweather-Regular";
+}
+.wrapper .sign-up-part .sign-up-form .agreement-part .checkbox-part .terms-and-conditions-a {
+  color: #000000;
+  border-bottom: 1px solid #C5705D;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .sign-up-part .sign-up-form .agreement-part .checkbox-part .terms-and-conditions-a:hover {
+  opacity: 0.5;
+}
+.wrapper .sign-up-form .username-part.error {
+  border: 2px solid red;
+  color: red;
+}
+.wrapper .sign-up-form .password-part.error {
+  border: 2px solid red;
+  color: red;
+}
+.wrapper .sign-up-form .email-part.error {
+  border: 2px solid red;
+  color: red;
+}
+.wrapper .sign-up-part .sign-up-form .sign-up-button {
+  color: #F8EDE3;
+  background-color: #C5705D;
+  font-family: "Merriweather-Light";
+  transition: opacity 0.2s;
+}
+.wrapper .sign-up-part .sign-up-form .sign-up-button:disabled{
+  cursor: not-allowed;
+}
+.wrapper .sign-up-part .sign-up-form .sign-up-button:hover {
+  opacity: 0.5;
+}
+.wrapper .sign-up-part .sign-up-form h6 {
+  font-family: "Merriweather-Regular";
+}
+.wrapper .sign-up-part .sign-up-form h6 a {
+  color: #000000;
+  border-bottom: 1px solid #C5705D;
+  font-family: "Merriweather-Regular";
+  transition: font-size 0.2s;
+}
+.wrapper .sign-up-part .sign-up-form h6 a:hover {
+  font-size: 18px;
+}
+
+/*This section is for setting attributes for responsive 430px or less.*/
+@media screen and (max-width: 430px) {
+  .wrapper .sign-up-part {
+    width: 17rem;
+  }
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Register-Style.css.map */

@@ -1,0 +1,104 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper .footer-part {
+  width: 100%;
+  height: auto;
+  background-color: #C5705D;
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .footer-part .help-and-information-part h5 {
+  font-family: "Merriweather-Bold";
+  transition: font-size 0.2s;
+}
+.wrapper .footer-part .help-and-information-part h5:hover {
+  font-size: 22px;
+}
+.wrapper .footer-part .help-and-information-part .help-and-information-items {
+  color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: font-size 0.2s;
+}
+.wrapper .footer-part .help-and-information-part .help-and-information-items:hover {
+  font-size: 18px;
+}
+.wrapper .footer-part .about-us-part h5 {
+  font-family: "Merriweather-Bold";
+  transition: font-size 0.2s;
+}
+.wrapper .footer-part .about-us-part h5:hover {
+  font-size: 22px;
+}
+.wrapper .footer-part .about-us-part .about-us-items {
+  color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: font-size 0.2s;
+}
+.wrapper .footer-part .about-us-part .about-us-items:hover {
+  font-size: 18px;
+}
+.wrapper .footer-part .communication-part h5 {
+  font-family: "Merriweather-Bold";
+  transition: font-size 0.2s;
+}
+.wrapper .footer-part .communication-part h5:hover {
+  font-size: 22px;
+}
+.wrapper .footer-part .communication-part .input-and-send-icon input {
+  border: none;
+  outline: none;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .footer-part .copyright-part {
+  background-color: #F8EDE3;
+  color: #000000;
+  font-size: 16px;
+}
+.wrapper .footer-part .copyright-part span {
+  font-family: "Merriweather-Regular";
+}
+.wrapper .footer-part .copyright-part img {
+  width: 30px;
+  height: auto;
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Footer.css.map */

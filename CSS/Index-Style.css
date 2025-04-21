@@ -1,0 +1,731 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper {
+  width: 100%;
+  background-color: #F8EDE3;
+  overflow: hidden;
+  animation-name: opacities;
+  animation-duration: 0.2s;
+}
+.wrapper .header-part .navbar-part {
+  width: 70%;
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .header-part .navbar-part .logo-part {
+  width: 70px;
+  height: auto;
+}
+.wrapper .header-part .navbar-part .hamburger-icon {
+  background: none;
+  border: none;
+}
+.wrapper .header-part .navbar-part .ul-part .li-part .home-a-part {
+  border-bottom: 1px solid #000000;
+}
+.wrapper .header-part .navbar-part .ul-part .li-part .a-part {
+  color: #000000;
+  font-family: "Merriweather-Regular";
+  transition: all 0.2s;
+}
+.wrapper .header-part .navbar-part .ul-part .li-part .a-part:hover {
+  font-size: 18px;
+}
+.wrapper .header-part .navbar-part .shopping-bag-and-search-part .shopping-bag-button {
+  background: none;
+  border: none;
+  transition: all 0.2s;
+}
+.wrapper .header-part .navbar-part .shopping-bag-and-search-part .search-button {
+  background: none;
+  border: none;
+}
+.wrapper .header-part .navbar-part .shopping-bag-and-search-part .search-box {
+  outline: none;
+}
+.wrapper .header-part .navbar-part .shopping-bag-and-search-part .search-box::-moz-placeholder {
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .header-part .navbar-part .shopping-bag-and-search-part .search-box::placeholder {
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .carousel-part {
+  animation-name: opacities;
+  animation-duration: 1s; 
+   margin-top: 2rem;
+}
+.wrapper .carousel-part .carousel-item-part {
+  background-color: #DFD3C3;
+  height: 40rem;
+}
+.wrapper .category-part {
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .category-part .categories {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+.wrapper .category-part .category-size {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+.wrapper .category-part .categories:hover {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.wrapper .category-part .category-title {
+  color: #000000;
+  font-family: "Merriweather-Regular";
+}
+.wrapper .best-selling-products-part {
+  background-color: #C5705D;
+  width: 100%;
+  height: auto;
+  animation-name: opacities;
+  animation-duration: 1s;
+  background-color: #C5705D;
+  flex-grow: 1;
+}
+.wrapper .best-selling-products-part .best-selling-products-title-part {
+  font-family: "Merriweather-Bold";
+  color: #000000;
+  font-size: 18px;
+  margin-top: -1rem;
+  position: relative;
+}
+.wrapper .best-selling-products-part .best-selling-products-title-part::after {
+  content: "";
+  display: inline-block;
+  width: 88%;
+  height: 2px;
+  background-color: #F8EDE3;
+  position: absolute;
+  top: 27%;
+  margin-left: 12px;
+  animation-name: best-selling-products-title-part-after-desktop-size;
+  animation-duration: 4s;
+}
+
+.wrapper .best-selling-products-part .best-selling-products-flex-part {
+  display: flex; /* Ensures products are displayed in a row */
+  flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+  justify-content: flex-start; /* Aligns items to the start */
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products {
+  background-color: #DFD3C3;
+  width: 14.5rem;
+  height: 23rem;
+  justify-content: space-between;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-image {
+  width: 10rem;
+  height: 10rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-title {
+  font-family: "Merriweather-Regular";
+  padding-top: 0.6rem;
+  margin-top: 1rem;
+  height: 1rem;
+  text-align: center;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-price {
+  font-family: "Merriweather-Regular";
+  padding-top: 2rem;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products .add-to-shopping-bag {
+  background-color: #C5705D;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products .add-to-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .best-selling-products-part .best-selling-products-cards-part .products:hover {
+  transform: scale(1.03);
+}
+.wrapper .best-selling-products-part .more-shape {
+  display: flex; /* Ensures its children (the link) are aligned properly */
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 1rem;
+  margin-right: 30px;
+}
+.wrapper .best-selling-products-part .more-shape a {
+  transition: opacity 0.2s;
+}
+.wrapper .best-selling-products-part .more-shape a img {
+  width: 50px;
+  height: auto;
+}
+.wrapper .best-selling-products-part .more-shape a span {
+  color: #F8EDE3;
+  font-size: 14px;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .best-selling-products-part .more-shape a:hover {
+  opacity: 0.5;
+}
+.wrapper .separator-line::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  animation-name: opacities, separator-line-animation;
+  animation-duration: 1s, 3s;
+}
+.wrapper .categories-title-part .title-part {
+  font-family: "Merriweather-Bold";
+  animation-name: opacities;
+  animation-duration: 1s;
+}
+.wrapper .show-women-products-part {
+  background-color: #F8EDE3;
+  width: 100%;
+  height: auto;
+  animation-name: opacities;
+  animation-duration: 1s;
+  margin-left: 1rem;
+  justify-content: space-between !important;
+}
+.wrapper .show-women-products-part .show-women-products-title-part {
+  font-family: "Merriweather-Bold";
+  color: #000000;
+  font-size: 18px;
+  margin-top: -1rem;
+  position: relative;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products {
+  background-color: #C5705D;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 16rem;
+  height: 23rem;
+  transition: transform 0.2s;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products .products-image {
+  width: 9rem;
+  height: 9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products .products-title {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 0.6rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products .products-price {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 2rem;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products .add-to-shopping-bag {
+  background-color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products .add-to-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .show-women-products-part .show-women-products-cards-part .products:hover {
+  transform: scale(1.03);
+}
+.wrapper .show-women-products-part .more-shape {
+  display: flex; /* Ensures its children (the link) are aligned properly */
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 0.9rem;
+}
+.wrapper .show-women-products-part .more-shape a {
+  transition: opacity 0.2s;
+}
+.wrapper .show-women-products-part .more-shape a img {
+  width: 50px;
+  height: auto;
+}
+.wrapper .show-women-products-part .more-shape a span {
+  color: #C5705D;
+  font-size: 14px;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .show-women-products-part .more-shape a:hover {
+  opacity: 0.5;
+}
+.wrapper .show-men-products-part {
+  background-color: #F8EDE3;
+  width: 100%;
+  height: auto;
+  animation-name: opacities;
+  animation-duration: 1s;
+  margin-left: 1rem;
+  justify-content: space-between !important;
+}
+.wrapper .show-men-products-part .show-men-products-title-part {
+  font-family: "Merriweather-Bold";
+  color: #000000;
+  font-size: 18px;
+  margin-top: -1rem;
+  position: relative;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products {
+  background-color: #C5705D;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 16rem;
+  height: 23rem;
+  transition: transform 0.2s;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products .products-image {
+  width: 9rem;
+  height: 9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products .products-title {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 0.6rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products .products-price {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 2rem;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products .add-to-shopping-bag {
+  background-color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products .add-to-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .show-men-products-part .show-men-products-cards-part .products:hover {
+  transform: scale(1.03);
+}
+.wrapper .show-men-products-part .more-shape {
+  display: flex; /* Ensures its children (the link) are aligned properly */
+  justify-content: center; 
+  align-items: center; 
+}
+.wrapper .show-men-products-part .more-shape a {
+  transition: opacity 0.2s;
+}
+.wrapper .show-men-products-part .more-shape a img {
+  width: 50px;
+  height: auto;
+}
+.wrapper .show-men-products-part .more-shape a span {
+  color: #C5705D;
+  font-size: 14px;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .show-men-products-part .more-shape a:hover {
+  opacity: 0.5;
+}
+.wrapper .show-accessories-products-part {
+  background-color: #F8EDE3;
+  width: 100%;
+  height: auto;
+  animation-name: opacities;
+  animation-duration: 1s;
+  margin-left: 1rem;
+  justify-content: space-between !important;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-title-part {
+  font-family: "Merriweather-Bold";
+  color: #000000;
+  font-size: 18px;
+  margin-top: -1rem;
+  position: relative;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products {
+  background-color: #C5705D;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 16rem;
+  height: 23rem;
+  transition: transform 0.2s;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-image {
+  width: 9rem;
+  height: 9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-title {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 0.6rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-price {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  padding-top: 2rem;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .add-to-shopping-bag {
+  background-color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .add-to-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-cards-part .products:hover {
+  transform: scale(1.03);
+}
+.wrapper .show-accessories-products-part .more-shape {
+  display: flex; /* Ensures its children (the link) are aligned properly */
+  justify-content: center; 
+  align-items: center; 
+}
+.wrapper .show-accessories-products-part .more-shape a {
+  transition: opacity 0.2s;
+}
+.wrapper .show-accessories-products-part .more-shape a img {
+  width: 50px;
+  height: auto;
+}
+.wrapper .show-accessories-products-part .more-shape a span {
+  color: #C5705D;
+  font-size: 14px;
+  font-family: "Merriweather-LightItalic";
+}
+.wrapper .show-accessories-products-part .more-shape a:hover {
+  opacity: 0.5;
+}
+
+/*This section is for setting attributes for responsive 1700px or less.*/
+@media screen and (max-width: 1700px) {
+  .wrapper .best-selling-products-part .best-selling-products-title-part::after {
+    width: 86%;
+    animation-name: best-selling-products-title-part-after-1700px;
+  }
+  .wrapper .best-selling-products-part {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.2rem;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-cards-part .products .add-to-shopping-bag {
+    font-size: 12px;
+  }
+  .wrapper .show-women-products-part {
+    width: 97%;
+    overflow-x: scroll;
+    overflow-y:hidden;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products {
+    margin-left: 16px;
+    margin-right: 24px;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.2rem;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .add-to-shopping-bag {
+    font-size: 12px;
+  }
+  .wrapper .show-men-products-part {
+    width: 97%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products {
+    width: 14rem;
+    margin-left: 16px;
+    margin-right: 24px;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.2rem;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .add-to-shopping-bag {
+    font-size: 12px;
+  }
+  .wrapper .show-accessories-products-part {
+    width: 97%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products {
+    width: 14rem;
+    margin-left: 16px;
+    margin-right: 24px;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.2rem;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .add-to-shopping-bag {
+    font-size: 12px;
+  }
+}
+/* This section is for setting attributes for responsive 1430px or less. */
+@media screen and (max-width: 1430px) {
+  .wrapper .best-selling-products-part .best-selling-products-title-part::after {
+    width: 84%;
+    animation-name: best-selling-products-title-part-after-1430px;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-title {
+    font-size: 12px;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-cards-part .products .products-price {
+    font-size: 12px;
+    padding-top: 0rem;
+    margin-top: 2rem;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-cards-part .products .add-to-shopping-bag {
+    font-size: 10px;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products {
+    width: 12rem;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .products-title {
+    font-size: 12px;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .products-price {
+    font-size: 12px;
+    padding-top: 0rem;
+    margin-top: 2rem;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .add-to-shopping-bag {
+    font-size: 10px;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products {
+    width: 12rem;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .products-title {
+    font-size: 12px;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .products-price {
+    font-size: 12px;
+    padding-top: 0rem;
+    margin-top: 2rem;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .add-to-shopping-bag {
+    font-size: 10px;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products {
+    width: 12rem;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-title {
+    font-size: 12px;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-price {
+    font-size: 12px;
+    padding-top: 0rem;
+    margin-top: 2rem;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .add-to-shopping-bag {
+    font-size: 10px;
+  }
+}
+/*This section is for setting attributes for responsive 1200px or less.*/
+@media screen and (max-width: 1200px) {
+  .wrapper .best-selling-products-part .best-selling-products-title-part::after {
+    width: 1023px;
+    animation-name: best-selling-products-title-part-after-1200px;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.7rem;
+  }
+  .wrapper .show-women-products-part .show-women-products-cards-part .products .add-to-shopping-bag {
+    font-size: 8px;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.9rem;
+  }
+  .wrapper .show-men-products-part .show-men-products-cards-part .products .add-to-shopping-bag {
+    font-size: 8px;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .products-price {
+    padding-top: 0rem;
+    margin-top: 2.9rem;
+  }
+  .wrapper .show-accessories-products-part .show-accessories-products-cards-part .products .add-to-shopping-bag {
+    font-size: 8px;
+  }
+}
+/*This section is for setting attributes for responsive 900px or less.*/
+@media screen and (max-width: 900px) {
+  .wrapper .carousel-part .carousel-item-part {
+    height: 30rem;
+  }
+}
+/*This section is for setting attributes for responsive 780px or less.*/
+@media screen and (max-width: 780px) {
+  .wrapper .carousel-part .carousel-item-part {
+    height: 25rem;
+  }
+  .wrapper .separator-line::before {
+    animation-duration: 1s, 2s;
+  }
+}
+/*This section is for setting attributes for responsive 670px or less.*/
+@media screen and (max-width: 670px) {
+  .wrapper .carousel-part .carousel-item-part {
+    height: 20rem;
+  }
+  .wrapper .show-women-products-part {
+    width: 91%;
+  }
+  .wrapper .show-men-products-part {
+    width: 91%;
+  }
+  .wrapper .show-accessories-products-part {
+    width: 91%;
+  }
+}
+/*This section is for setting attributes for responsive 588px or less.*/
+@media screen and (max-width: 588px) {
+  .wrapper .best-selling-products-part .best-selling-products-title-part {
+    font-size: 16px;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-title-part::after {
+    width: 1045px;
+    animation-name: best-selling-products-title-part-after-588px;
+    animation-duration: 3s;
+  }
+}
+/*This section is for setting attributes for responsive 500px or less.*/
+@media screen and (max-width: 500px) {
+  .wrapper .carousel-part .carousel-item-part {
+    height: 15rem;
+  }
+  .wrapper .best-selling-products-part .best-selling-products-title-part::after {
+    width: 1055px;
+    animation-name: best-selling-products-title-part-after-500px;
+    animation-duration: 3s;
+  }
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*This section is about best selling products title after desktop size or less animation.*/
+@keyframes best-selling-products-title-part-after-desktop-size {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+/*This section is about best selling products title after 1700px or less animation.*/
+@keyframes best-selling-products-title-part-after-1700px {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
+/*This section is about best selling products title after 1430px or less animation.*/
+@keyframes best-selling-products-title-part-after-1430px {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 84%;
+  }
+}
+/*This section is about best selling products title after 1200px or less animation.*/
+@keyframes best-selling-products-title-part-after-1200px {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 1023px;
+  }
+}
+/*This section is about best selling products title after 588px or less animation.*/
+@keyframes best-selling-products-title-part-after-588px {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 1045px;
+  }
+}
+/*This section is about best selling products title after 500px or less animation.*/
+@keyframes best-selling-products-title-part-after-500px {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 1055px;
+  }
+}
+/*This section is about separator line animation.*/
+@keyframes separator-line-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Index-Style.css.map */

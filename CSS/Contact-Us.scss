@@ -1,0 +1,69 @@
+/*This section is for setting fonts.*/
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Bold";
+    src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*This section is about color variables.*/
+$first-color: #F8EDE3;
+$second-color: #DFD3C3;
+$third-color: #D0B8A8;
+$fourth-color: #C5705D;
+$fifth-color: #000000;
+
+/*This section is setting attributes for wrapper part.*/
+.wrapper{
+    overflow: hidden;
+    animation-name: opacities;
+    animation-duration: 1s;
+    .contact-us-part{
+        .title-part{
+            font-family: "Merriweather-Bold";
+        }
+        .details-part{
+            .details{
+                font-family: "Merriweather-Regular";
+                font-size: 20px;
+                a{
+                    color: $fifth-color;
+                    border-bottom: 1px solid $fourth-color;
+                }
+            }
+            .titles{
+                font-family: "Merriweather-Bold";
+            }
+        }
+    }
+}
+
+/*This section is for setting opacities animation.*/
+@keyframes opacities{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

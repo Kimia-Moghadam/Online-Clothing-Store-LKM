@@ -1,0 +1,142 @@
+/*This section is for setting fonts.*/
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Merriweather-Bold";
+    src: url(/Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*This section is about color variables.*/
+$first-color: #F8EDE3;
+$second-color: #DFD3C3;
+$third-color: #D0B8A8;
+$fourth-color: #C5705D;
+$fifth-color: #000000;
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper{
+    /*This section is for setting attributes for login part.*/
+    .login-part{
+        width: 25rem;
+        background: rgb(223, 211, 195, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(223, 211, 195, 0.3);
+        animation-name: opacities;
+        animation-duration: 1s;
+        h4{
+            font-family: "Merriweather-Bold";
+            transition: font-size 0.2s;
+        }
+        h4:hover{
+            font-size: 26px;
+        }
+        .login-form{
+            .inputs-part{
+                outline: none;
+                border: none;
+                font-family: "Merriweather-LightItalic";
+            }
+            .dropdown-part{
+                .dropdown-button{
+                    outline: none;
+                    border: 1px solid $fifth-color;
+                    font-family: "Merriweather-LightItalic";
+                    background: none;
+                    color: $fifth-color;
+                }
+                .dropdown-menu-part{
+                    background-color: $second-color;
+                    border: 1px solid $fifth-color;
+                    .dropdown-items-part{
+                        color: $fifth-color;
+                    }
+                }
+            }
+            .agreement-and-forgot-password-part{
+                .checkbox-part{
+                    input{
+                        border: 1px solid $fourth-color;
+                    }
+                    input:checked{
+                        background-color: $fourth-color;
+                    }
+                    label{
+                        font-family: "Merriweather-Regular";
+                    }
+                }
+                a{
+                    color: $fifth-color;
+                    border-bottom: 1px solid $fourth-color;
+                    font-family: "Merriweather-Regular";
+                    transition: font-size 0.2s;
+                }
+                a:hover{
+                    font-size: 17px;
+                }
+            }
+            .login-button{
+                color: $first-color;
+                background-color: $fourth-color;
+                font-family: "Merriweather-Light";
+                transition: opacity 0.2s;
+            }
+            .login-button:hover{
+                opacity: 0.5;
+            }
+            h6{
+                font-family: "Merriweather-Regular";
+                a{
+                    color: $fifth-color;
+                    border-bottom: 1px solid $fourth-color;
+                    font-family: "Merriweather-Regular";
+                    transition: font-size 0.2s;
+                }
+                a:hover{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/*This section is for setting attributes for responsive 430px or less.*/
+@media screen and (max-width: 430px) {
+    .wrapper{
+        .login-part{
+            width: 17rem;
+        }
+    }
+}
+
+/*This section is about opacity animation.*/
+@keyframes opacities{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

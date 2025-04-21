@@ -1,0 +1,98 @@
+/*This section is for setting fonts.*/
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../Assets/Fonts/Merriweather/Merriweather-Bold.ttf) format(truetype);
+}
+
+/*This section is setting a series of attributes for all the elements and their afters and befores.*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*This section is for setting attributes for wrapper part.*/
+.wrapper {
+  overflow: hidden;
+}
+.wrapper .show-accessories-products-part {
+  max-height: 100%;
+  min-height: 100vh;
+  animation-name: opacities;
+  animation-duration: 1s;
+  text-align: center;
+}
+.wrapper .show-accessories-products-part .show-accessories-products-title-part .show-accessories-products-title {
+  font-family: "Merriweather-Bold";
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products {
+  background-color: #C5705D;
+  width: 14.5rem;
+  height: 23rem;
+  transition: transform 0.2s;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products .products-image {
+  width: 10rem;
+  height: 10rem;
+  background-color: #DFD3C3;
+  margin-top: 0.5rem;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products .products-title {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+  height: 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products .products-price {
+  font-family: "Merriweather-Regular";
+  color: #F8EDE3;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products .add-to-shopping-bag {
+  background-color: #DFD3C3;
+  font-family: "Merriweather-Regular";
+  transition: opacity 0.2s;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products .add-to-shopping-bag:hover {
+  opacity: 0.5;
+}
+.wrapper .show-accessories-products-part .show-accessories-products .products:hover {
+  transform: scale(1.03);
+}
+.wrapper .show-accessories-products-part .cart {
+  background-color: #C5705D;
+  margin-bottom: 4rem;
+  transition: opacity 0.2s;
+  font-family: "Merriweather-Regular";
+}
+.wrapper .show-accessories-products-part .cart:hover {
+  background-color: #e29280;
+  opacity: 0.5;
+}
+
+
+/*This section is about opacity animation.*/
+@keyframes opacities {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Show-Accessories-Products-Style.css.map */
